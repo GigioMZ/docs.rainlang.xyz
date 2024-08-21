@@ -17,6 +17,12 @@ const config = {
       {
         docs: {
           routeBasePath: "/",
+          sidebarPath: require.resolve("./sidebars.js"),
+        },
+        blog: {
+          showReadingTime: true,
+          // Uncomment the following line to enable blog support if needed
+          // path: "./blog",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -42,6 +48,30 @@ const config = {
     prism: {
       theme: lightCodeTheme,
       darkTheme: darkCodeTheme,
+    },
+    footer: {
+      style: "light",
+      links: [
+        {
+          title: "Docs",
+          items: [
+            {
+              label: "Intro",
+              to: "/",
+            },
+          ],
+        },
+        {
+          title: "Community",
+          items: [
+            {
+              label: "GitHub",
+              href: "https://github.com/rainlanguage",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Rainlang. Built with Docusaurus.`,
     },
   },
 };
