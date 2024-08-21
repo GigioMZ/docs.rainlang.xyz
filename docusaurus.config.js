@@ -1,3 +1,10 @@
+// @ts-check
+// Note: type annotations allow type checking and IDEs autocompletion
+
+const lightCodeTheme = require("prism-react-renderer/themes/github");
+const darkCodeTheme = require("prism-react-renderer/themes/dracula");
+
+/** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Rainlang | Raindex",
   tagline: "Rainlang is defi's native language.",
@@ -54,7 +61,7 @@ const config = {
       darkTheme: darkCodeTheme,
     },
   },
-  // Temporarily disable plugins to isolate the issue
+  // Uncomment the plugins as needed
   // plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 };
 
