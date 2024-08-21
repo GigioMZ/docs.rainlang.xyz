@@ -5,7 +5,6 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: "Rainlang | Raindex",
-  tagline: "Rainlang is defi's native language.",
   url: "https://docs.rainlang.xyz",
   baseUrl: "/",
   onBrokenLinks: "throw",
@@ -17,14 +16,7 @@ const config = {
       "classic",
       {
         docs: {
-          path: "./docs",
           routeBasePath: "/",
-          sidebarPath: require.resolve("./sidebars.js"),
-          includeCurrentVersion: true,
-        },
-        blog: {
-          blogSidebarTitle: "All posts",
-          blogSidebarCount: "ALL",
         },
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
@@ -37,7 +29,6 @@ const config = {
       logo: {
         alt: "Rain logo",
         src: "img/logo.svg",
-        srcDark: "img/logo-dark.svg",
       },
       items: [
         {
@@ -46,12 +37,6 @@ const config = {
           position: "left",
           label: "Docs",
         },
-        { to: "/blog", label: "Blog", position: "left" },
-        {
-          href: "https://github.com/rainlanguage",
-          label: "GitHub",
-          position: "right",
-        },
       ],
     },
     prism: {
@@ -59,7 +44,6 @@ const config = {
       darkTheme: darkCodeTheme,
     },
   },
-  plugins: [require.resolve("@cmfcmf/docusaurus-search-local")],
 };
 
 module.exports = config;
